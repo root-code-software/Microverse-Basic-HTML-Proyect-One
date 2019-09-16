@@ -1,0 +1,51 @@
+a {
+  text-decoration: none;
+}
+
+.layout {
+  font-family: Roboto, monospace;
+  background-color: lightgrey;
+  &__nav {
+    display: flexbox;
+    width: 100%;
+    height: 80px;
+    padding-bottom: 20px;
+  }
+}
+
+.logoMain {
+  max-width: 130px;
+}
+
+.navSearch {
+  width: 500px;
+  height: 30px;
+}
+
+.navButton {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.navbarContainer {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  &__listItem {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.signInButton {
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: lightblue;
+  border-radius: 5px;
+}
