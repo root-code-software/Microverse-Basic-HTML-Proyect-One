@@ -101,15 +101,25 @@ var youtubeVideos = [
     }
 ]
 
+document.getElementById("sideBarUpNext").innerHTML = '<a class="related" href="https://www.youtube.com/watch?v='+youtubeVideos[0].code+'">'+
+'<div class="related__thumbnail">'+
+    '<img width="200" src="http://i.ytimg.com/vi/'+youtubeVideos[0].code+'/maxresdefault.jpg" >'+
+'</div>'+
+'<div class="related__text">'+
+    '<p>'+youtubeVideos[0].title+'</p>'+
+    '<p> Duration:'+youtubeVideos[0].duration+'</p>'+
+'</div>'+
+'</a>';
+
 document.getElementById("relatedContainer").innerHTML = youtubeVideos.map((video, id) =>{
     if (id>0) return (
         '<a class="related" href="https://www.youtube.com/watch?v='+video.code+'" key="'+id+'">'+
             '<div class="related__thumbnail">'+
-                '<img width="280" src="http://i.ytimg.com/vi/'+video.code+'/maxresdefault.jpg" >'+
+                '<img width="200" src="http://i.ytimg.com/vi/'+video.code+'/maxresdefault.jpg" >'+
             '</div>'+
             '<div class="related__text">'+
                 '<p>'+video.title+'</p>'+
-                '<p>'+video.duration+'</p>'+
+                '<p> Duration: '+video.duration+'</p>'+
             '</div>'+
         '</a>'
     )
