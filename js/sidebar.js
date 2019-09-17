@@ -111,9 +111,8 @@ document.getElementById("sideBarUpNext").innerHTML = '<a class="related" href="h
 '</div>'+
 '</a>';
 
-document.getElementById("relatedContainer").innerHTML = youtubeVideos.map((video, id) =>{
-    if (id>0) return (
-        '<a class="related" href="https://www.youtube.com/watch?v='+video.code+'" key="'+id+'">'+
+youtubeVideos.map((video, id) =>{
+    if (id>0) document.getElementById("relatedContainer").innerHTML += '<a class="related" href="https://www.youtube.com/watch?v='+video.code+'" key="'+id+'">'+
             '<div class="related__thumbnail">'+
                 '<img width="200" src="http://i.ytimg.com/vi/'+video.code+'/maxresdefault.jpg" >'+
             '</div>'+
@@ -122,5 +121,5 @@ document.getElementById("relatedContainer").innerHTML = youtubeVideos.map((video
                 '<p> Duration: '+video.duration+'</p>'+
             '</div>'+
         '</a>'
-    )
+    
 })
