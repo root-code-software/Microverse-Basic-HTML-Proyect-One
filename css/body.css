@@ -1,0 +1,22 @@
+.mainLayout {
+  font-family: Roboto, monospace;
+}
+
+.mainLayout__header {
+  font-size: 12px;
+  color: white;
+  background-color: #167ac6;
+  padding: 10px;
+}
+
+.--whiteBackground {
+  outline: 1px solid #167ac6;
+  color: black;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.content {
+  width: 100%;
+}
+/*# sourceMappingURL=body.css.map */

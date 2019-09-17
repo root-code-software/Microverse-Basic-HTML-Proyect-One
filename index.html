@@ -1,189 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="./css/reset.css">
-<link rel="stylesheet" href="./css/grid.css">
-<link rel="stylesheet" href="./css/navbarStyle.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/grid.css" />
+    <link rel="stylesheet" href="./css/navbarStyle.css" />
+    <link rel="stylesheet" href="./css/body.css">
+    <script type="text/javascript" src="js/sidebar.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Basic HTML Project</title>
-</head>
+  </head>
 
-<body class="layout">
+  <body class="layout">
     <nav class="layout__nav">
-        <div class="navbarContainer">
-            <div class="navbarContainer__listItem"> 
-                <img class="navButton" src="./image/menu.svg" alt="menu">
-            </div>
-            
-            <div class="navbarContainer__listItem">                
-            <ul class="hamburgerMenu">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            </div>
-            <div class="navbarContainer__listItem">
-                <img class="logoMain" src="image/youtube-logo.png">
-            </div>
-            <div class="navbarContainer__listItem">
-                <div>
-                    <input class="navSearch" placeholder="Search">
-                </div>
-            </div>
-            <div class="navbarContainer__listItem">
-                <img class="navButton --uploadButton" src="./image/upload.png" alt="">
-            </div>
-            <div class="navbarContainer__listItem">
-                <button class="signInButton">
-                    Sign In
-                </button>
-            </div>
+      <div class="navbarContainer">
+        <div class="navbarContainer__listItem">
+          <img class="navButton" src="./image/menu.svg" alt="menu" />
         </div>
+
+        <div class="navbarContainer__listItem">
+          <ul class="hamburgerMenu">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="navbarContainer__listItem">
+          <img class="logoMain" src="image/youtube-logo.png" />
+        </div>
+        <div class="navbarContainer__listItem">
+          <div>
+            <input class="navSearch" placeholder="Search" />
+          </div>
+        </div>
+        <div class="navbarContainer__listItem">
+          <img
+            class="navButton --uploadButton"
+            src="./image/upload.png"
+            alt=""
+          />
+        </div>
+        <div class="navbarContainer__listItem">
+          <button class="signInButton">
+            Sign In
+          </button>
+        </div>
+      </div>
     </nav>
     <main class="mainLayout">
-        <section class="mainLayout__header">
-            <h1>
-                TITLE
-            </h1>
-            <p>
-                SUB
-            </p>
-        </section>
-        <div class="mainLayout__body">
-            <div class="content">
-                <div class="content__player">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UCbVh7-zyZ8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="content__info">
-                    <h2>
-                        VIDEO TITTLE
-                    </h2>
-                    <div class="info">
-                        INFO
-                    </div>
-                    <div class="description">
-                        <h3>
-                            published
-                        </h3>
-                        <p>
-                            Description
-                        </p>
-                    </div>
-                    <button class="contentShowMore">
-                        SHOW MORE
-                    </button>
-                </div>
-                <div class="content__comment">
-                    COMMENTS
-                </div>
-            </div>
-            <aside class="layout__aside">
-                <div class="asideHeader">
-                    <h3 class="asideHeader__upNext">
-                        Up Next
-                    </h3>
-                    <div class="asideHeader__autoplay">
-                        <h3>
-                            Autoplay
-                        </h3>
-                        <input type="checkbox">
-                    </div>
-                </div>
-                <div id="sideBarUpNext" class="upNext">
-                    <div class="upNext__video">
-                        <video src="#"></video>
-                    </div>
-                    <div class="upnext__name">
-                        <a href="#">
-                            VIDEO NAME
-                        </a>
-                    </div>
-                </div>
-                <div id="relatedContainer">
+      <section class="mainLayout__header">
+        <h1>
+          Choose a Language
+        </h1>
+      </section>
 
-                </div>
-                <button class="asideShowMore">
-                    SHOW MORE
-                </button>
-            </aside>
+      <section class="mainLayout__header --whiteBackground">
+          <p>You are viewing youtube in English US</p>
+      </section>
+      <div class="mainLayout__body">
+        <div class="content">
+          <div class="content__player">
+            <iframe
+              width="760"
+              height="445"
+              src="https://www.youtube.com/embed/UCbVh7-zyZ8"
+              frameborder="0"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="content__info">
+            <h2>
+              VIDEO TITTLE
+            </h2>
+            <div class="info">
+              INFO
+            </div>
+            <div class="description">
+              <h3>
+                published
+              </h3>
+              <p>
+                Description
+              </p>
+            </div>
+            <button class="contentShowMore">
+              SHOW MORE
+            </button>
+          </div>
+          <div class="content__comment">
+            COMMENTS
+          </div>
         </div>
+        <aside class="layout__aside">
+          <div class="asideHeader">
+            <h3 class="asideHeader__upNext">
+              Up Next
+            </h3>
+            <div class="asideHeader__autoplay">
+              <h3>
+                Autoplay
+              </h3>
+              <input type="checkbox" />
+            </div>
+          </div>
+          <div id="sideBarUpNext" class="upNext">
+            <div class="upNext__video">
+              <video src="#"></video>
+            </div>
+            <div class="upnext__name">
+              <a href="#">
+                VIDEO NAME
+              </a>
+            </div>
+          </div>
+          <div id="relatedContainer"></div>
+          <button class="asideShowMore">
+            SHOW MORE
+          </button>
+        </aside>
+      </div>
     </main>
     <footer class="layout__footer">
-        <div class="footerSettings">
-            <button>
-                <p>Language:</p>
-                <select>
-                    <p>
-                        English
-                    </p>
-                    <img src="">
-                </select>
-            </button>
-            <button>
-                <p>Location:</p>
-                <select>
-                    <p>
-                        Netherlands
-                    </p>
-                    <img src="">
-                </select>
-            </button>
-            <button>
-                <p>Restricted Mode:</p>
-                <select>
-                    <p>
-                        Off
-                    </p>
-                    <img src="">
-                </select>
-            </button>
-            <a href="#">
-                History
-            </a>
-            <a href="#">
-                Help
-            </a>
-        </div>
-        <div class="footerLinks">
-            <ul>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Press</a>
-                </li>
-                <li>
-                    <a href="#">Copyright</a>
-                </li>
-                <li>
-                    <a href="#">Creators</a>
-                </li>
-                <li>
-                    <a href="#">Advertise</a>
-                </li>
-                <li>
-                    <a href="#">Developers</a>
-                </li>
-                <li>
-                    <a href="#">Teams</a>
-                </li>
-                <li>
-                    <a href="#">Privacy</a>
-                </li>
-                <li>
-                    <a href="#">Policy & Safety</a>
-                </li>
-                <li>
-                    <a href="#">Test new features</a>
-                </li>
-            </ul>
-        </div>
+      <div class="footerSettings">
+        <button>
+          <p>Language:</p>
+          <select>
+            <p>
+              English
+            </p>
+            <img src="" />
+          </select>
+        </button>
+        <button>
+          <p>Location:</p>
+          <select>
+            <p>
+              Netherlands
+            </p>
+            <img src="" />
+          </select>
+        </button>
+        <button>
+          <p>Restricted Mode:</p>
+          <select>
+            <p>
+              Off
+            </p>
+            <img src="" />
+          </select>
+        </button>
+        <a href="#">
+          History
+        </a>
+        <a href="#">
+          Help
+        </a>
+      </div>
+      <div class="footerLinks">
+        <ul>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Press</a>
+          </li>
+          <li>
+            <a href="#">Copyright</a>
+          </li>
+          <li>
+            <a href="#">Creators</a>
+          </li>
+          <li>
+            <a href="#">Advertise</a>
+          </li>
+          <li>
+            <a href="#">Developers</a>
+          </li>
+          <li>
+            <a href="#">Teams</a>
+          </li>
+          <li>
+            <a href="#">Privacy</a>
+          </li>
+          <li>
+            <a href="#">Policy & Safety</a>
+          </li>
+          <li>
+            <a href="#">Test new features</a>
+          </li>
+        </ul>
+      </div>
     </footer>
-    <script type="text/javascript" src="js/sidebar.js"></script>
-</body>
-
+  </body>
 </html>
