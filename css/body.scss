@@ -16,6 +16,7 @@
     padding: 5px 1px 2px 1px;
     display: block;
     margin-bottom: 20px;
+    width: 100%;
   }
 
   &__body {
@@ -33,7 +34,6 @@
   align-items: center;
   padding: 2px 10px;
   height: 20px;
-  width: 100%;
 }
 .--whiteBackground {
   padding: 2px 10px;
@@ -43,19 +43,23 @@
   color: black;
   height: 35px;
   background-color: white;
-  width: 100%;
 }
 
 .content {
   grid-area: content;
   grid-gap: 50px;
+  margin: 0 auto;
   &__player {
     background-color: white;
   }
 
   &__info {
     background-color: white;
-  }
+      display: grid;
+      grid-template-columns: 100px auto 200px;
+      grid-template-rows: 38px 50px 50px 1fr;
+      grid-template-areas: "title title title" "avatar channel views" "avatar subscribe views" "buttons buttons buttons";
+    }
 }
 
 .layout__aside {
@@ -99,7 +103,8 @@
   padding: 5px;
 }
 
-.asideShowMore {
+.showMore {
+  border-left: 6px solid black;
   display: block;
   width: 100%;
   border: none;
@@ -111,3 +116,106 @@
   color: grey;
   cursor: pointer;
 }
+    
+.title { 
+  grid-area: title; 
+  font-weight: 600;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.avatar {
+  grid-area: avatar; 
+  color: white;
+  font-size: 49px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: greenyellow;
+}
+
+.channel { 
+  grid-area: channel; 
+  font-weight: 500;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 14px;
+  align-self: center;
+}
+
+.subscribe { 
+  grid-area: subscribe; 
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  height: 30px;
+  padding-left: 10px;
+
+  &__redButton {
+    width: 200px;
+    height: 30px;
+    background-color: red;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid slategrey;
+  }
+
+  &__counter {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid slategrey;
+  }
+}
+
+.views { 
+  grid-area: views; 
+  width: 180px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  border-bottom: 2px solid blue;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  color: slategrey;
+  font-size: 20px;
+}
+
+.buttons { 
+  grid-area: buttons; 
+  display: flexbox;
+  align-items: center;
+  color: slategray;
+  padding: 10px;
+
+  &__left {
+    float: left;
+    padding-left: 15px;
+  }
+
+  &__Buttons {
+    border: none;
+    background-color: transparent;
+    color: slategrey;
+    font-size: 12px;
+  }
+
+  &__right{
+    float: right;
+    padding-right: 20px;
+  }
+}
+
+.description {
+  padding: 20px;
+}
+
