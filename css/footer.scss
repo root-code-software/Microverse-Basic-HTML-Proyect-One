@@ -1,0 +1,49 @@
+.layout__footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 220px;
+  background-color: white;
+}
+
+.footerSettings {
+  padding-top: 20px;
+  display: flex;
+  padding-left: 250px;
+  width: 100%;
+  height: 90px;
+  flex-direction: row;
+
+  &__item {
+    height: 25px;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid lightgray;
+    display: inline-flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    color: rgb(39, 39, 39);
+  }
+}
+
+.footerLinks {
+  display: flex;
+  width: 400px;
+  height: 90px;
+  flex-direction: row;
+  padding-left: 20px;
+
+  &__listItem {
+    display: inline-flex;
+    font-size: 12px;
+  }
+}
+
+.logoFooter {
+  width: 90px;
+  height: 30px;
+  position: absolute;
+  top: 40px;
+  left: 80px;
+}
