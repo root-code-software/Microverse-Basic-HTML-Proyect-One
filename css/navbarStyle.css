@@ -2,6 +2,11 @@ a {
   text-decoration: none;
 }
 
+.layout {
+  font-family: Roboto, monospace;
+  background-color: lightgrey;
+}
+
 .layout__nav {
   position: relative;
   display: flexbox;
@@ -42,8 +47,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: white;
 }
 
@@ -53,7 +58,6 @@ a {
 }
 
 .signInButton {
-  color: white;
   position: absolute;
   right: 20px;
   top: 20px;
@@ -62,7 +66,7 @@ a {
   height: 40px;
   border: none;
   outline: none;
-  background-color: rgb(22, 122, 198);
+  background-color: lightblue;
   border-radius: 5px;
 }
 /*# sourceMappingURL=navbarStyle.css.map */

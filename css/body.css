@@ -1,12 +1,38 @@
 .mainLayout {
   font-family: Roboto, monospace;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 80px 1fr;
+      grid-template-rows: 80px 1fr;
+      grid-template-areas: "mainLayout__header  mainLayout__header" "mainLayout__body mainLayout__body";
 }
 
 .mainLayout__header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: mainLayout__header;
   font-size: 12px;
   color: white;
   background-color: #167ac6;
   padding: 10px;
+  display: block;
+}
+
+.mainLayout__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "content layout__aside";
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: mainLayout__body;
 }
 
 .--whiteBackground {
@@ -17,6 +43,14 @@
 }
 
 .content {
-  width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: content;
+}
+
+.layout__aside {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: layout__aside;
 }
 /*# sourceMappingURL=body.css.map */
