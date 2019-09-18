@@ -248,6 +248,11 @@ a {
   color: #272727;
 }
 
+.footerSettings__buttonImage {
+  height: 15px;
+  padding: 1px 4px;
+}
+
 .footerLinks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,7 +387,7 @@ a {
       grid-template-columns: 5% 1fr 1fr 5%;
   -ms-grid-rows: 80px 1fr;
       grid-template-rows: 80px 1fr;
-      grid-template-areas: ". mainLayout__header  mainLayout__header ." ". mainLayout__body mainLayout__body .";
+      grid-template-areas: ". mainLayout__header  mainLayout__header ." ". mainLayout__body mainLayout__body .";
 }
 
 .mainLayout__header {
