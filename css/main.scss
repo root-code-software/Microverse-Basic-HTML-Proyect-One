@@ -164,10 +164,18 @@
   }
 }
 
-.infoButtons{
+.infoButtons {
   height: 25px;
 }
 .description {
   padding: 20px;
+  background-color: white;
+  color: rgb(49, 49, 49);
+  &__date {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  &__content {
+    font-size: 12px;
+  }
 }
-

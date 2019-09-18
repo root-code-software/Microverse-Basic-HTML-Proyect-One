@@ -387,7 +387,7 @@ a {
       grid-template-columns: 5% 1fr 1fr 5%;
   -ms-grid-rows: 80px 1fr;
       grid-template-rows: 80px 1fr;
-      grid-template-areas: ". mainLayout__header  mainLayout__header ." ". mainLayout__body mainLayout__body .";
+      grid-template-areas: ". mainLayout__header  mainLayout__header ." ". mainLayout__body mainLayout__body .";
 }
 
 .mainLayout__header {
@@ -611,5 +611,16 @@ a {
 
 .description {
   padding: 20px;
+  background-color: white;
+  color: #313131;
+}
+
+.description__date {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.description__content {
+  font-size: 12px;
 }
 /*# sourceMappingURL=main.css.map */
