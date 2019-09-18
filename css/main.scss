@@ -43,9 +43,7 @@
   grid-area: content;
   grid-gap: 50px;
   margin: 0 auto;
-  &__player {
-    background-color: white;
-  }
+  gap: 4em;
 
   &__info {
     background-color: white;
@@ -54,6 +52,21 @@
     grid-template-rows: 38px 50px 50px 1fr;
     grid-template-areas: "title title title" "avatar channel views" "avatar subscribe views" "buttons buttons buttons";
   }
+
+  &__comment {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 10em;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    font-size: 14px;
+  }
+}
+
+.loadingComments {
+  height: 5em;
 }
 
 .title {
@@ -65,14 +78,17 @@
 
 .avatar {
   grid-area: avatar;
-  color: white;
-  font-size: 49px;
   width: 100px;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: greenyellow;
+  padding: 0px 0px 0px 10px;
+
+  &__image {
+    height: 100px;
+    padding: 0px 10px 0px 0px;
+  }
 }
 
 .channel {
@@ -86,7 +102,6 @@
 
 .subscribe {
   grid-area: subscribe;
-  background-color: whitesmoke;
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -94,25 +109,19 @@
   padding-left: 10px;
 
   &__redButton {
-    width: 200px;
     height: 30px;
-    background-color: red;
-    font-size: 12px;
-    font-weight: 500;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid slategrey;
   }
 
   &__counter {
     width: 30px;
-    height: 30px;
+    height: 26px;
+    font-size: 12px;
+    color: grey;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid slategrey;
+    border: 1px solid rgb(173, 186, 199);
+    border-left: none;
   }
 }
 
@@ -146,6 +155,7 @@
     background-color: transparent;
     color: slategrey;
     font-size: 12px;
+    align-content: center;
   }
 
   &__right {
@@ -154,6 +164,10 @@
   }
 }
 
+.infoButtons{
+  height: 25px;
+}
 .description {
   padding: 20px;
 }
+

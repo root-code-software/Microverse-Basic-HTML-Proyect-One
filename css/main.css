@@ -429,10 +429,7 @@ a {
   grid-area: content;
   grid-gap: 50px;
   margin: 0 auto;
-}
-
-.content__player {
-  background-color: white;
+  gap: 4em;
 }
 
 .content__info {
@@ -444,6 +441,27 @@ a {
   -ms-grid-rows: 38px 50px 50px 1fr;
       grid-template-rows: 38px 50px 50px 1fr;
       grid-template-areas: "title title title" "avatar channel views" "avatar subscribe views" "buttons buttons buttons";
+}
+
+.content__comment {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 10em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: grey;
+  font-size: 14px;
+}
+
+.loadingComments {
+  height: 5em;
 }
 
 .title {
@@ -461,8 +479,6 @@ a {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: avatar;
-  color: white;
-  font-size: 49px;
   width: 100px;
   height: 100px;
   display: -webkit-box;
@@ -474,7 +490,12 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: greenyellow;
+  padding: 0px 0px 0px 10px;
+}
+
+.avatar__image {
+  height: 100px;
+  padding: 0px 10px 0px 0px;
 }
 
 .channel {
@@ -494,7 +515,6 @@ a {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: subscribe;
-  background-color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,27 +530,14 @@ a {
 }
 
 .subscribe__redButton {
-  width: 200px;
   height: 30px;
-  background-color: red;
-  font-size: 12px;
-  font-weight: 500;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 1px solid slategrey;
 }
 
 .subscribe__counter {
   width: 30px;
-  height: 30px;
+  height: 26px;
+  font-size: 12px;
+  color: grey;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,7 +547,8 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid slategrey;
+  border: 1px solid #adbac7;
+  border-left: none;
 }
 
 .views {
@@ -588,11 +596,17 @@ a {
   background-color: transparent;
   color: slategrey;
   font-size: 12px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .buttons__right {
   float: right;
   padding-right: 20px;
+}
+
+.infoButtons {
+  height: 25px;
 }
 
 .description {
