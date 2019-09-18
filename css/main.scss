@@ -1,12 +1,18 @@
+@import "reset";
+@import "navBar";
+@import "footer";
+@import "sideBar";
+@import "langpopUp";
+
 .mainLayout {
   position: relative;
   font-family: Roboto, monospace;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 5% 1fr 1fr 5%;
   grid-template-rows: 80px 1fr;
   grid-template-areas:
-    "mainLayout__header  mainLayout__header"
-    "mainLayout__body mainLayout__body";
+    ". mainLayout__header  mainLayout__header ."
+    ". mainLayout__body mainLayout__body .";
 
   &__header {
     grid-area: mainLayout__header;
@@ -16,12 +22,11 @@
     padding: 5px 1px 2px 1px;
     display: block;
     margin-bottom: 20px;
-    width: 100%;
   }
 
   &__body {
     display: grid;
-    grid-template-columns: 760px 380px;
+    grid-template-columns: 760px 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "content layout__aside";
     grid-area: mainLayout__body;
@@ -29,20 +34,9 @@
   }
 }
 
-.--blueBackground {
-  display: flex;
-  align-items: center;
-  padding: 2px 10px;
-  height: 20px;
-}
-.--whiteBackground {
-  padding: 2px 10px;
-  display: flex;
-  align-items: center;
-  outline: 1px solid rgb(22, 122, 198);
-  color: black;
-  height: 35px;
-  background-color: white;
+.layout {
+  font-family: Roboto, monospace;
+  background-color: lightgrey;
 }
 
 .content {
@@ -55,77 +49,22 @@
 
   &__info {
     background-color: white;
-      display: grid;
-      grid-template-columns: 100px auto 200px;
-      grid-template-rows: 38px 50px 50px 1fr;
-      grid-template-areas: "title title title" "avatar channel views" "avatar subscribe views" "buttons buttons buttons";
-    }
-}
-
-.layout__aside {
-  grid-area: layout__aside;
-  background-color: white;
-}
-
-.related {
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-
-  &__text {
-    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 100px auto 200px;
+    grid-template-rows: 38px 50px 50px 1fr;
+    grid-template-areas: "title title title" "avatar channel views" "avatar subscribe views" "buttons buttons buttons";
   }
 }
 
-.asideHeader {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  width: 90%;
-
-  &__upNext {
-    justify-content: start;
-    color: rgb(92, 98, 104);
-    font-size: 14px;
-  }
-
-  &__autoplay {
-    padding-right: 5px;
-    display: inline-flex;
-    justify-content: space-between;
-    color: gray;
-    font-size: 12px;
-  }
-}
-
-.textLittle {
-  font-size: 10px;
-  padding: 5px;
-}
-
-.showMore {
-  border-left: 6px solid black;
-  display: block;
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 5px 5px;
-  text-align: center;
-  padding-bottom: 10px;
-  background-color: white;
-  color: grey;
-  cursor: pointer;
-}
-    
-.title { 
-  grid-area: title; 
+.title {
+  grid-area: title;
   font-weight: 600;
   padding: 10px;
   font-size: 18px;
 }
 
 .avatar {
-  grid-area: avatar; 
+  grid-area: avatar;
   color: white;
   font-size: 49px;
   width: 100px;
@@ -136,8 +75,8 @@
   background-color: greenyellow;
 }
 
-.channel { 
-  grid-area: channel; 
+.channel {
+  grid-area: channel;
   font-weight: 500;
   padding: 5px;
   padding-left: 10px;
@@ -145,8 +84,8 @@
   align-self: center;
 }
 
-.subscribe { 
-  grid-area: subscribe; 
+.subscribe {
+  grid-area: subscribe;
   background-color: whitesmoke;
   display: flex;
   flex-direction: row;
@@ -177,8 +116,8 @@
   }
 }
 
-.views { 
-  grid-area: views; 
+.views {
+  grid-area: views;
   width: 180px;
   display: flex;
   align-items: flex-end;
@@ -190,8 +129,8 @@
   font-size: 20px;
 }
 
-.buttons { 
-  grid-area: buttons; 
+.buttons {
+  grid-area: buttons;
   display: flexbox;
   align-items: center;
   color: slategray;
@@ -209,7 +148,7 @@
     font-size: 12px;
   }
 
-  &__right{
+  &__right {
     float: right;
     padding-right: 20px;
   }
@@ -218,4 +157,3 @@
 .description {
   padding: 20px;
 }
-
