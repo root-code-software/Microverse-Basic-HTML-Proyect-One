@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="js/sidebar.js" defer></script>
+
+    <title>Basic HTML Project</title>
+  </head>
+
+  <body class="layout">
+    <nav class="layout__nav">
+      <div class="navbarContainer">
+        <div class="navbarContainer__listItem">
+          <img class="navButton" src="./image/menu.svg" alt="menu" />
+        </div>
+
+        <div class="navbarContainer__listItem">
+          <ul class="hamburgerMenu">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="navbarContainer__listItem">
+          <img
+            class="logoMain"
+            src="image/youtube-logo.png"
+            alt="youtube-Logo"
+          />
+        </div>
+        <div class="navbarContainer__listItem">
+          <div>
+            <input class="navSearch" placeholder="Search" />
+            <button class= "navSearch__button"> <img class="navSearch__icon" src="./image/searchico.svg" alt="search"> </button>
+          </div>
+        </div>
+        <div class="navbarContainer__listItem">
+          <img
+            class="navButton --notification"
+            src="./image/notification.png"
+            alt="notification"
+          />
+
+          <img
+            class="navButton --messages"
+            src="./image/messages.png"
+            alt=""
+          />
+
+          <img
+            class="navButton --uploadButton"
+            src="./image/upload.png"
+            alt="upload"
+          />
+        </div>
+        <div class="navbarContainer__listItem">
+          <button class="signInButton">
+            Sign In
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main class="mainLayout">
+      <section class="mainLayout__header">
+        <div class="--blueBackground">
+          <h1>
+            Choose a Language
+          </h1>
+        </div>
+        <div class="--whiteBackground">
+          <p>You are viewing youtube in English US</p>
+        </div>
+      </section>
+
+      <div class="mainLayout__body">
+        <div class="content">
+          <div class="content__player">
+            <iframe
+              width="760"
+              height="445"
+              src="https://www.youtube.com/embed/UCbVh7-zyZ8"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="content__info">
+            <div class="title">
+              "The Remote Job Search: My Microverse Journey" with Paul Rail
+            </div>
+            <div class="avatar">
+              <img src="./image/avatar.jpg" alt="avatar" class="avatar__image">
+            </div>
+            <div class="channel">
+              The Odin Project
+            </div>
+            <div class="subscribe">
+              <img class="subscribe__redButton" src="./image/subscribe.png" alt="subscribeMain">
+              <div class="subscribe__counter">799</div>
+            </div>
+            <div class="views">
+              50,016 views
+            </div>
+            <div class="buttons">
+              <div class="buttons__left">
+                <button class="buttons__Buttons">
+                  <img src="./image/save.png" alt="addIcon" class="infoButtons">
+                  Add to
+                </button>
+                <button class="buttons__Buttons">
+                    <img src="./image/share.png" alt="shareIcon" class="infoButtons">
+                  Share
+                </button>
+                <button class="buttons__Buttons">
+                    <img src="./image/more.png" alt="moreIcon" class="infoButtons">
+                  More
+                </button>
+              </div>
+              <div class="buttons__right">
+                <button class="buttons__Buttons">
+                    <img src="./image/up-thumb.png" alt="upThumbIcon" class="infoButtons">
+                  395
+                </button>
+                <button class="buttons__Buttons">
+                    <img src="./image/down-thumb.png" alt="downThumbIcon" class="infoButtons">
+                  14
+                </button>
+              </div>
+            </div>
+            
+          </div>
+          <div class="description">
+            <h3 class="description__date">
+              Published on Feb 27, 2014
+            </h3>
+            <p class="description__content">
+              How do you contribute to open source? In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github. I'll also describe what kinds of contributions open source software projects are typically looking for. As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails. You can find more information about that project at http://theodinproject.com.
+            </p>
+          </div>
+          <!-- <div style="background-color: white;">
+            <hr>
+          </div> -->
+          <button class="showMore">
+            SHOW MORE
+          </button>
+          <div class="content__comment">
+            <img src="./image/loading.gif" alt="loadingComments" class="loadingComments">
+            Loading...
+          </div>
+        </div>
+        <aside class="layout__aside">
+          <div class="asideHeader">
+            <h3 class="asideHeader__upNext">
+              Up Next
+            </h3>
+            <div class="asideHeader__autoplay">
+              Autoplay
+              <img
+                src="image/info.png"
+                style="width: 15px; height: 15px;"
+                alt="info"
+              />
+              <input type="checkbox" />
+            </div>
+          </div>
+          <div id="sideBarUpNext" class="upNext">
+            <div class="upNext__video">
+              <video src="#"></video>
+            </div>
+            <div class="upnext__name">
+              <a href="#">
+                VIDEO NAME
+              </a>
+            </div>
+          </div>
+          <hr />
+          <div id="relatedContainer"></div>
+          <hr />
+          <button class="showMore">
+            <span>SHOW MORE</span>
+          </button>
+        </aside>
+      </div>
+    </main>
+    <footer class="layout__footer">
+      <div class="footerSettings">
+        <img
+          class="logoFooter"
+          src="image/youtube-logo.png"
+          alt="youtube-logo-footer"
+        />
+        <button class="footerSettings__item">
+          <img class="footerSettings__buttonImage" src="./image/language.PNG" alt="languageFooter" />
+          Language: English
+          <img class="footerSettings__buttonImage" src="./image/down.png" alt="downFooter"/>
+        </button>
+        <button class="footerSettings__item">
+          Location: Netherlands
+          <img class="footerSettings__buttonImage" src="./image/down.png" alt="downFooter"/>
+        </button>
+        <button class="footerSettings__item">
+          Restricted Mode: Off
+          <img class="footerSettings__buttonImage" src="./image/down.png" alt="downFooter"/>
+        </button>
+        <button class="footerSettings__item">
+            <img class="footerSettings__buttonImage" src="./image/hourglass.png" alt="hourglassFooter"/>
+          History: Off
+        </button>
+        <button class="footerSettings__item">
+            <img class="footerSettings__buttonImage" src="./image/faq.png" alt="questionFooter"/>
+          Help: Off
+        </button>
+      </div>
+      <hr />
+      <div class="footerLinks">
+        <ul class="footerLinks__listContainer">
+          <li class="footerLinks__listItem">
+            <a href="#">About</a>
+          </li>
+          <li class="footerLinks__listItem">
+            <a href="#">Press</a>
+          </li>
+          <li class="footerLinks__listItem">
+            <a href="#">Copyright</a>
+          </li>
+          <li class="footerLinks__listItem">
+            <a href="#">Creators</a>
+          </li>
+          <li class="footerLinks__listItem">
+            <a href="#">Advertise</a>
+          </li>
+          <li class="footerLinks__listItem">
+            <a href="#">Developers</a>
+          </li>
+          <li class="footerLinks__listItem">
+            <a href="#">Teams</a>
+          </li>
+          <li class="footerLinks__listItem">
+            <a href="#">Privacy</a>
+          </li>
+          <li class="footerLinks__listItem">
+            <a href="#">Policy & Safety</a>
+          </li>
+          <li class="footerLinks__listItem">
+            <a href="#">Test new features</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
