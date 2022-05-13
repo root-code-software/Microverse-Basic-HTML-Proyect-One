@@ -1,4 +1,5 @@
 <!-- PROJECT SHIELDS -->
+
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues-open][issues-open-shield]][issues-url]
@@ -11,7 +12,7 @@
 <br />
 <p align="center">
   <a href="https://">
-	  <img src="https://img.icons8.com/color/96/000000/full-image.png" alt="Logo"/>
+	  <img src="https://user-images.githubusercontent.com/67714964/168196569-345e85e0-d262-43e3-bcca-0bd861ad15d0.png" alt="Logo"/>
   </a>
 
   <h1 align="center">
@@ -31,13 +32,14 @@
 
 ## Table of Contents
 
-1. [Microverse-Basic-HTML-Proyect-One](#microverse-basic-html-proyect-one)
-2. [Author](#author)
-3. [Contributing](#contributing)
-4. [Show your support](#show-your-support)
-5. [License](#license)
+- [Microverse-Basic-HTML-Proyect-One](#microverse-basic-html-proyect-one)
+- [Author](#author)
+- [Contributing](#contributing)
+- [Show your support](#show-your-support)
+- [License](#license)
 
 # Microverse-Basic-HTML-Proyect-One
+
 This project consists of building an HTML document that matches the appearance of youtube video player page.
 
  <details>
@@ -68,10 +70,9 @@ This project consists of building an HTML document that matches the appearance o
       </li>
   </ul>
   <p>We think that the project portrays really interesting techniques and good use of basic web tools.</p>
-</details> 
+</details>
 
 Cheers!
-
 
 Live Version: https://israel-laguan.github.io/Microverse-Basic-HTML-Proyect-One/
 
@@ -119,7 +120,7 @@ Live Version: https://israel-laguan.github.io/Microverse-Basic-HTML-Proyect-One/
         </div>
     </td>
   </tr>
-</table> 
+</table>
 
 # Contributing
 
@@ -144,6 +145,7 @@ Icons from:
 Feel free to fork this project and improve it
 
 <!-- MARKDOWN LINKS & IMAGES -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/Israel-Laguan/Microverse-Basic-HTML-Proyect-One?style=for-the-badge
 [contributors-url]: https://github.com/Israel-Laguan/Microverse-Basic-HTML-Proyect-One/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Israel-Laguan/Microverse-Basic-HTML-Proyect-One?style=for-the-badge
